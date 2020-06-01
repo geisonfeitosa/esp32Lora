@@ -90,12 +90,9 @@ void setupLoRa() {
 #include <PubSubClient.h>
 #include <ArduinoJson.h> //5.7.0
 
-const char* ssid     = "Sao_Joaquim_2.4";
-const char* password = "saojoaquim";
-//const char* ssid     = "CampoLab";
-//const char* password = "campolab@2019";
+const char* ssid     = "Nome da rede wifi";
+const char* password = "Senha da rede";
 
-//const char* MQTT_SERVER = "iot.plug.farm";
 const char* MQTT_SERVER = "mqtt.eclipse.org";
 
 WiFiClient CLIENT;
@@ -250,7 +247,7 @@ void setup() {
   
   display.clear();
   display.drawString(0, 0, "Slave");
-  display.drawString(0, 25, "FAZENDA RENTAVEL");
+  display.drawString(0, 25, "GEISON FEITOSA");
   display.display();
 }
 
